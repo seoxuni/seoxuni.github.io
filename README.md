@@ -1,3 +1,3 @@
 # seoxuni.github.io
 
-### loveyourself
+### loveyourself!
