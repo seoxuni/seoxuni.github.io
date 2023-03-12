@@ -3,72 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 모바일 화면에 최적화된 뷰포트 설정 -->
     <title>noyb!</title>
-    <style>
-      #typing-area {
-        width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
-        height: 200px;
-        border: 2px solid #333;
-        padding: 10px;
-        margin: 50px auto;
-        overflow-y: scroll;
-        font-size: 18px;
-        font-family: 'Courier New', Courier, monospace;
-        position: relative;
-      }
-
-      #cursor {
-        display: none;
-        width: 8px;
-        height: 20px;
-        background-color: black;
-        animation: blink 0.7s infinite;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      .flow-text {
-        display: flex;
-          flex: 0 0 auto;
-          white-space: nowrap;
-          overflow: hidden;
-          transition: 0.3s;
-          font-size: 2.5rem;
-          font-weight:bold;
-          background-color: black;
-          font-family: 'Courier New', Courier, monospace;
-          color: white;
-      }
-      .flow-wrap {
-        animation: textLoop 15s linear infinite;
-        padding-right: 1.4881vw;
-      }
-      
-      @keyframes textLoop {
-        0% {
-          -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-        }
-        100% {
-          -webkit-transform: translate3d(-100%, 0, 0);
-          transform: translate3d(-100%, 0, 0);
-        }
-      }
-
-      @keyframes blink {
-        0% { opacity: 0; }
-        50% { opacity: 1; }
-        100% { opacity: 0; }
-      }
-
-      /* 모바일 화면에서는 가로폭을 더 줄이고 폰트 크기를 줄여서 텍스트가 보기 좋게 나오도록 함 */
-      @media (max-width: 768px) {
-        #typing-area {
-          width: 80%;
-          font-size: 16px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div id="typing-area"></div>
@@ -80,7 +15,6 @@
           <div class="flow-wrap">Click here if you want to see it in Korean. </div>
       </div>
     </div> -->
-
     <script>
       const typingArea = document.querySelector('#typing-area');
       const cursor = document.createElement('span');
