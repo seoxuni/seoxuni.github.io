@@ -10,7 +10,19 @@
   position: relative;
 }
 
-#cursor {
+#image-box {
+    width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
+    height: 200px;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 50px auto;
+    overflow-y: scroll;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+/* #cursor {
   display: none;
   width: 8px;
   height: 20px;
@@ -19,10 +31,16 @@
   position: absolute;
   top: 0;
   left: 0;
+} */
+
+.hanni {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
 
 .flow-text {
-  display: flex;
+    display: flex;
     flex: 0 0 auto;
     white-space: nowrap;
     overflow: hidden;
@@ -33,6 +51,7 @@
     font-family: 'Courier New', Courier, monospace;
     color: white;
 }
+
 .flow-wrap {
   animation: textLoop 15s linear infinite;
   padding-right: 1.4881vw;
@@ -58,6 +77,10 @@
 /* 모바일 화면에서는 가로폭을 더 줄이고 폰트 크기를 줄여서 텍스트가 보기 좋게 나오도록 함 */
 @media (max-width: 768px) {
   #typing-area {
+    width: 80%;
+    font-size: 16px;
+  }
+  #image-box {
     width: 80%;
     font-size: 16px;
   }
