@@ -1,6 +1,6 @@
 #typing-area {
   width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
-  height: 200px;
+  height: auto;
   border: 2px solid #333;
   padding: 10px;
   margin: 50px auto;
@@ -8,11 +8,12 @@
   font-size: 18px;
   font-family: 'Courier New', Courier, monospace;
   position: relative;
+  margin-bottom: 0px;
 }
 
 #image-box {
     width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
-    height: 200px;
+    height: auto;
     border: 2px solid #333;
     padding: 10px;
     margin: 50px auto;
@@ -20,6 +21,12 @@
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     position: relative;
+}
+
+#copyright {
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 0px;
 }
 
 /* #cursor {
@@ -83,5 +90,9 @@
   #image-box {
     width: 80%;
     font-size: 16px;
+  }
+  #copyright {
+    width: 85%;
+    font-size: 10px;
   }
 }
