@@ -1,3 +1,9 @@
+@import url("fonts/apple-sd-gothic-neo.css");
+
+* {
+  font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+}
+
 #typing-area {
   width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
   height: auto;
@@ -6,27 +12,27 @@
   margin: 50px auto;
   overflow-y: scroll;
   font-size: 18px;
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   position: relative;
   margin-bottom: 0px;
 }
 
 #image-box {
-    width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
-    height: auto;
-    border: 2px solid #333;
-    padding: 10px;
-    margin: 50px auto;
-    overflow-y: scroll;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace;
-    position: relative;
+  width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
+  height: auto;
+  border: 2px solid #333;
+  padding: 10px;
+  margin: 50px auto;
+  overflow-y: scroll;
+  font-size: 18px;
+  /* font-family: 'Courier New', Courier, monospace; */
+  position: relative;
 }
 
 #copyright {
-    width: 85%;
-    margin: 0px auto;
-    margin-top: 0px;
+  width: 91.5%;
+  margin: 0px auto;
+  margin-top: 0px;
 }
 
 /* #cursor {
@@ -40,23 +46,23 @@
   left: 0;
 } */
 
-.star {
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
+.image-1 {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
 
 .flow-text {
-    display: flex;
-    flex: 0 0 auto;
-    white-space: nowrap;
-    overflow: hidden;
-    transition: 0.3s;
-    font-size: 2.5rem;
-    font-weight:bold;
-    background-color: black;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
+  display: flex;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: 0.3s;
+  font-size: 2.5rem;
+  font-weight:bold;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
 }
 
 .flow-wrap {
@@ -89,6 +95,7 @@
   }
   #image-box {
     width: 80%;
+    height: auto;
     font-size: 16px;
   }
   #copyright {
