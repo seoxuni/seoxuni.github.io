@@ -40,3 +40,9 @@ li {
 .text-active {
     padding: 5px;
 }
+
+@media (max-width: 799px) {
+    .nav-text {
+        letter-spacing: -1px;
+    }
+}
