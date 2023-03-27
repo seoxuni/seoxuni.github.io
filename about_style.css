@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "arialblack";
+    src: url("ariblack.ttf") format("truetype");
+    font-weight: normal;
+}
+
+html, body {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    margin: 0px 0px 20px;
+}
+
+.nav-text {
+    white-space: nowrap;
+}
+
+.nav-back {
+    float: right;
+}
+
+#content {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.text-active {
+    padding: 30px;
+}

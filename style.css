@@ -1,106 +1,90 @@
-@import url("fonts/apple-sd-gothic-neo.css");
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css); */
 
-* {
-  font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;
+html, body {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    width: 100%;
 }
 
-#typing-area {
-  width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
-  height: auto;
-  border: 2px solid #333;
-  padding: 10px;
-  margin: 50px auto;
-  overflow-y: scroll;
-  font-size: 18px;
-  /* font-family: 'Courier New', Courier, monospace; */
-  position: relative;
-  margin-bottom: 0px;
-  margin-top: 35px;
+#nav {
+    margin: 0px 0px 20px;
 }
 
-#image-box {
-  width: 90%; /* 모바일 화면에서는 가로폭을 90%로 설정 */
-  height: auto;
-  border: 2px solid #333;
-  padding: 10px;
-  margin: 50px auto;
-  overflow-y: scroll;
-  font-size: 18px;
-  /* font-family: 'Courier New', Courier, monospace; */
-  position: relative;
+.nav-text {
+    white-space: nowrap;
 }
 
-#copyright {
-  width: 91.5%;
-  margin: 0px auto;
-  margin-top: 0px;
+.nav-about {
+    float: right;
 }
 
-/* #cursor {
-  display: none;
-  width: 8px;
-  height: 20px;
-  background-color: black;
-  animation: blink 0.7s infinite;
-  position: absolute;
-  top: 0;
-  left: 0;
-} */
-
-.image-1 {
-  width: 100%;
-  height: 100%;
-  object-fit:cover;
+#content-left {
+    width: 50%;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.flow-text {
-  display: flex;
-  flex: 0 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  transition: 0.3s;
-  font-size: 2.5rem;
-  font-weight:bold;
-  background-color: black;
-  font-family: 'Courier New', Courier, monospace;
-  color: white;
+#content-right {
+    width: 50%;
+    float: right;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
-.flow-wrap {
-  animation: textLoop 15s linear infinite;
-  padding-right: 1.4881vw;
+.content-left-under-blank, .content-right-under-blank {
+    padding: 5px;
 }
 
-@keyframes textLoop {
-  0% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
+img {
+    margin: auto;
+    text-align: center;
 }
 
-@keyframes blink {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+@media (max-width: 799px) {
+    .content-left-text {
+        line-height: 1.3;
+        margin-bottom: 1.2em;
+    }
+
+    .content-right-text, .content-right-under-text {
+        line-height: 1.1;
+        margin-bottom: 1.2em;
+    }
+
+    .content-left-under-text {
+        line-height: 1.2;
+        margin-bottom: 1.2em;
+    }
 }
 
-/* 모바일 화면에서는 가로폭을 더 줄이고 폰트 크기를 줄여서 텍스트가 보기 좋게 나오도록 함 */
-@media (max-width: 768px) {
-  #typing-area {
-    width: 80%;
-    font-size: 16px;
-  }
-  #image-box {
-    width: 80%;
-    height: auto;
-    font-size: 16px;
-  }
-  #copyright {
-    width: 85%;
-    font-size: 10px;
-  }
+@media (min-width: 800px) {
+    .content-left-text {
+        font-size: 15px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    .content-right-text {
+        font-size: 15px;
+        line-height: 1.0;
+        margin-bottom: 20px;
+    }
+
+    .content-left-under-text {
+        font-size: 15px;
+        line-height: 1.15;
+        margin-bottom: 20px;
+    }
+
+    .content-right-under-text {
+        font-size: 15px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+   
+    .left-image {
+        text-align: center;
+    }
 }
