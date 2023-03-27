@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "arialblack";
+    font-family: "ariblack";
     src: url("ariblack.ttf") format("truetype");
     font-weight: normal;
 }
@@ -13,8 +13,10 @@ html, body {
 #nav {
     margin: 0px 0px 20px;
     background-color: #33ff33;
-    color: white;
+    color: black;
     border-bottom: 1px solid black;
+    font-family: "ariblack";
+    text-decoration: none;
 }
 
 .nav-text {
