@@ -12,6 +12,9 @@ html, body {
 
 #nav {
     margin: 0px 0px 20px;
+    background-color: #33ff33;
+    color: white;
+    border-bottom: 1px solid black;
 }
 
 .nav-text {
@@ -33,5 +36,5 @@ li {
 }
 
 .text-active {
-    padding: 10px;
+    padding: 5px;
 }
