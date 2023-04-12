@@ -9,8 +9,13 @@
 
 html, body {
     font-family: Helvetica, Arial, sans-serif;
+    color: white;
     height: 100%;
     width: 100%;
+}
+
+body {
+    background-image: url("./Leche.gif");
 }
 
 #nav {
